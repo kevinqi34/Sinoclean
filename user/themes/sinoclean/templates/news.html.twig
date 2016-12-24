@@ -1,0 +1,89 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block addcss %}
+<link href="/user/themes/sinoclean/css/default.css" type="text/css" rel="stylesheet" />
+<link href="/user/themes/sinoclean/css/news.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block addjs %}
+<script src="/user/themes/sinoclean/js/news.js" type="text/javascript" ></script>
+{% endblock %}
+
+
+{% block head_img %}
+{% if header.background_pic %}
+  <div class="head_img" style="background: url({{header.background_pic }}) no-repeat center;" >
+  </div>
+{% endif %}
+{% endblock %}
+
+
+
+{% block content %}
+
+  {% if grav.language.getActive == 'zh' %}
+  <h1>新闻中心</h1>
+  {% else %}
+  <h1>News</h1>
+  {% endif %}
+  <hr>
+  {% if grav.language.getActive == 'zh' %}
+  <h2>企业动态</h2>
+  {% else %}
+  <h2>Company News<h2>
+  {% endif %}
+
+
+  <div class="wrap_news">
+  {% for p in page.collection %}
+  {% if p.header.type == "Company" %}
+  <a href="./news/{{ p.slug }}">
+  <div class="news_post">
+  <div class="news_img">
+  <img src="{{ p.header.content_img }}" />
+  </div>
+  {% if grav.language.getActive == 'zh' %}
+  <p>日期: {{ p.header.date }}</p>
+  {% else %}
+  <p>Date: {{ p.header.date }}</p>
+  {% endif %}
+  <h3>{{ p.title }}</h3>
+  </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+  </div>
+
+  {% if grav.language.getActive == 'zh' %}
+  <h2>行业动态</h2>
+  {% else %}
+  <h2>Industry News<h2>
+  {% endif %}
+
+  <div class="wrap_news">
+  {% for p in page.collection %}
+  {% if p.header.type == "Industry" %}
+  <a href="./news/{{ p.slug }}">
+  <div class="news_post">
+  <div class="news_img">
+  <img src="{{ p.header.content_img }}" />
+  </div>
+  {% if grav.language.getActive == 'zh' %}
+  <p>日期: {{ p.header.date }}</p>
+  {% else %}
+  <p>Date: {{ p.header.date }}</p>
+  {% endif %}
+
+  <h3>{{ p.title }}</h3>
+
+
+  </div>
+  {% endif %}
+  </a>
+  {% endfor %}
+  </div>
+
+
+
+
+{% endblock %}

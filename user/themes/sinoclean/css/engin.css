@@ -1,0 +1,22 @@
+
+
+
+#body img {
+  max-height: 400px;
+}
+
+#body {
+
+text-align: center;
+
+
+}
+
+
+@media (max-width: 1000px) {
+#body img {
+  height: 175px;
+  width: 290px;
+}
+
+}

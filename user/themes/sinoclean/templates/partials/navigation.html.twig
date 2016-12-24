@@ -1,0 +1,38 @@
+
+<div class="header">
+    <div class="wrapper padding">
+        <a href="{{ base_url == '' ? '/' : base_url }}">
+            <img class="header_logo" src="{{ theme_url }}{{ config.sinoclean.top_menu.img_url }}" />
+        </a>
+
+
+        {% for items in config.sinoclean.top_menu.menu_items %}
+          {% if grav.language.getActive == 'zh' %}
+            <a class="right-menu" href="{{ base_url }}{{ items.url_zh }}">{{ items.name_zh }}</a>
+          {% else %}
+            <a class="right-menu" href="{{ base_url }}{{ items.url }}">{{ items.name }}</a>
+          {% endif %}
+
+        {% endfor %}
+
+
+
+
+
+        <div class="mob-header">
+          <img id="mob-nav" src="{{ theme_url }}{{ config.sinoclean.mob_menu.button }}"/>
+        </div>
+
+        <div class="mob-elem">
+        {% for items in config.sinoclean.top_menu.menu_items %}
+          {% if grav.language.getActive == "zh" %}
+            <a class="mob-menu-elem" href="{{ base_url }}{{ items.url_zh }}">{{ items.name_zh }}</a>
+          {% else %}
+            <a class="mob-menu-elem" href="{{ base_url }}{{ items.url }}">{{ items.name }}</a>
+          {% endif %}
+        {% endfor %}
+        </div>
+
+
+    </div>
+</div>

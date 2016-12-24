@@ -1,0 +1,26 @@
+title: Sinoclean
+author:
+  name: Kevin Qi
+  email: 'kevinqi34@gmail.com'
+metadata:
+    description: 'Sinoclean is an engineering specialized in clean technologies.'
+
+
+#Top Menu
+top_menu:
+  img_url: /images/site_logo.jpg
+  menu_items:
+    - name: Contact Us
+      url: ./contact
+    - name: Jobs
+      url: ./jobs
+    - name: News
+      url: ./news
+    - name: Engineering
+      url: ./engineering
+    - name: About Us
+      url: ./about
+
+
+mob_menu:
+  button: /images/menu.png      

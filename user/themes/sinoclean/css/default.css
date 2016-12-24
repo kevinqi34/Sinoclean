@@ -1,0 +1,210 @@
+h1 {
+  padding-left: 10px;
+  font-weight: 100;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+
+h2 {
+  font-size: 25px;
+  font-weight: 100;
+  padding-left: 10px;
+
+
+}
+
+h3 {
+  padding-left: 10px;
+
+}
+
+
+#body {
+
+  width: 1000px;
+  margin-left: calc(50% - 500px);
+  padding-bottom: 50px;
+}
+
+
+
+#body p {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 25px;
+
+}
+
+
+
+div.head_img {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 184px;
+  background-repeat: no-repeat;
+  background-position: center;
+   -moz-background-size: cover;
+  background-size: cover;
+
+}
+
+
+div.engin_fields {
+  width: 960px;
+  height: 640px;
+  padding-bottom: 10px;
+  margin: auto;
+
+
+}
+
+div.button_field {
+  width: 296px;
+  height: 296px;
+  margin: 10px;
+  position: relative;
+  float: left;
+  border: 2px solid #017561;
+  border-radius: 25px;
+  color: #017561;
+  text-align: center;
+
+
+}
+
+div.button_field:hover {
+  background-color: #017561;
+  color: white;
+
+}
+
+
+div.button_field div.img {
+  margin: auto;
+  position: relative;
+  margin-top: 15%;
+  height: 150px;
+  width: 150px;
+
+
+}
+
+div.button_field div.img img {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  max-height: 100%;
+  max-width: 100%;
+
+
+
+}
+
+
+
+div.button_field h3 {
+  margin-top: 7%;
+  font-size: 15px;
+}
+
+
+div.engin-nav {
+  width: 100%;
+  height: auto;
+  padding-bottom: 25px;
+  position: relative;
+  float: left;
+  text-align: center;
+  border-bottom: 1px solid gray;
+
+}
+div.engin-nav h2 {
+  line-height: 50px;
+  color: #017561;
+
+}
+
+div.engin-nav a {
+  color: #017561 !important;
+  display: inline-block !important;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #017561;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+div.engin-nav a:hover {
+    border: 2px solid #017561;
+
+}
+
+
+@media (max-width: 1000px) {
+#body {
+  margin-left: 0px;
+  width: 100%;
+}
+
+
+div.engin_fields {
+  width: 640px;
+  height: 960px;
+
+
+}
+
+}
+
+
+
+@media (max-width: 700px) {
+
+  div.engin_fields {
+    width: 320px;
+    height: 1920px;
+
+
+  }
+
+
+
+
+}
+
+
+
+
+@media (max-width: 330px) {
+
+
+
+  div.engin_fields {
+    width: 300px;
+    height: 1800px;
+
+  }
+
+  div.button_field {
+    width: 286px;
+    height: 286px;
+    margin: 5px;
+    position: relative;
+    float: left;
+
+
+
+  }
+
+
+}

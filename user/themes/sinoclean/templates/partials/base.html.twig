@@ -1,0 +1,67 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('theme://images/sinoclean_favicon.ico') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+    {% block stylesheets %}
+      {% do assets.addCss('theme://css/theme.css', 98) %}
+    {% endblock %}
+    {{ assets.Css() }}
+    {% block addcss %}
+
+    {% endblock %}
+
+
+    {% block javascripts %}
+        {% do assets.addJs('jquery', 100) %}
+        {% do assets.addJs('theme://js/theme.js') %}
+    {% endblock %}
+    {{ assets.js() }}
+    {% block addjs %}
+
+    {% endblock %}
+
+
+{% endblock head%}
+</head>
+
+<body>
+
+
+<!-- Navigation -->
+{% block header %}
+  {% include 'partials/langswitcher.html.twig' %}
+  {% include 'partials/navigation.html.twig' %}
+{% endblock %}
+
+
+<!-- Header Image -->
+{% block head_img %}
+
+{% endblock %}
+
+<!-- Content Body -->
+{% block body %}
+    <div id="body">{% block content %}{% endblock %}</div>
+{% endblock %}
+
+
+<!-- Footer -->
+{% block footer %}
+  {% include 'partials/footer.html.twig' %}
+{% endblock %}
+
+
+
+</body>
+</html>

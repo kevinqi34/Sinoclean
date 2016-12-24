@@ -1,0 +1,300 @@
+
+h1 {
+  text-align: center;
+  font-weight: 100;
+}
+
+h1 img {
+  height: 40px;
+
+}
+
+
+
+img.background {
+  width: 100%;
+  position: relative;
+  float: left;
+  display: none;
+
+}
+
+p {
+  text-align: center;
+}
+
+
+div.content-block {
+  width: 100%;
+  height: 300px;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  float: left;
+
+}
+
+div.content-block a {
+  color: #017561;
+
+}
+
+/*
+div.content-block:nth-of-type(even) {
+  color: white;
+  background-color: #017561;
+
+}
+
+div.content-block:nth-of-type(even) a {
+  color: white;
+
+}
+*/
+
+div.content-wrap {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: relative;
+
+
+
+}
+
+div.content-wrap div.next-block {
+  width: 50%;
+  height: 300px;
+  position: relative;
+  float: left;
+
+
+
+}
+
+
+
+div.content-wrap div.next-block h1 {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  height: 46px;
+  line-height: 46px;
+  margin-top: 127px;
+  font-weight: bold;
+
+
+
+}
+
+
+div.content-wrap div.left div.next-block-wrap {
+  width: 500px;
+  float: right;
+  position: relative;
+  height: 100%;
+
+
+}
+
+div.content-wrap div.right div.next-block-wrap {
+  width: 500px;
+  float: left;
+  position: relative;
+  height: 100%;
+
+
+}
+
+
+
+
+
+div.content-wrap div.button {
+  background-color: #017561;
+  color: white;
+  background: linear-gradient(to right, #f2f2f2 50%, #017561 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+  transition:all 2s ease;
+
+
+}
+
+div.content-wrap div.button:hover {
+    background-position:left bottom;
+    color: #017561;
+}
+
+div.content-wrap div.button2 {
+  background-color: #017561;
+  color: white;
+  background: linear-gradient(to right, #017561 50%, #f2f2f2 50%);
+  background-size: 200% 100%;
+  background-position:left bottom;
+  transition:all 2s ease;
+
+
+}
+div.content-wrap div.button2:hover {
+    background-position:right bottom;
+    color: #017561;
+}
+
+
+
+div.right1 div.link-wrap {
+  text-align: center;
+  width: 75%;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  font-size: 15px;
+
+}
+
+div.right1 a {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #017561;
+  margin: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+div.right1 a:hover {
+    border: 2px solid #017561;
+
+}
+
+
+div.left div.txt-block {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  float: left;
+
+}
+div.left div.txt-block:first-of-type {
+  margin-top: 50px;
+
+}
+
+div.left img {
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 9px;
+  float: right;
+  margin-right: 25px;
+  margin-left: 25px;
+  border: 1px solid #017561;
+
+}
+
+div.left h2 {
+  font-size: 15px;
+  line-height: 80px;
+  margin: 0px;
+  height: 80px;
+  margin-top: 10px;
+  text-align: center;
+  color: #017561;
+
+}
+
+
+@media (max-width: 1000px) {
+
+
+div.content-block {
+  height: 600px;
+
+}
+div.content-block  div.next-block div.next-block-wrap {
+  margin: auto;
+  float: none;
+  max-width: 500px;
+
+}
+
+div.content-block  div.next-block {
+  width: 100%;
+
+}
+
+div.left2 {
+  position: absolute;
+  top: 300px;
+
+}
+
+div.button2 {
+  position: absolute !important;
+  top: 0px !important;
+
+}
+
+}
+
+
+@media (max-width: 500px) {
+
+
+  div.content-block  div.next-block div.next-block-wrap {
+    width: 100%;
+
+  }
+
+  div.left2 {
+    height: auto !important;
+
+  }
+
+  div.left2 div.next-block-wrap div.txt-block {
+    height: auto;
+
+  }
+
+    div.left2 div.next-block-wrap div.txt-block h2 {
+      width: 100%;
+      position: relative;
+
+
+    }
+
+    div.left2 div.next-block-wrap div.txt-block img {
+      position: relative;
+      margin: 0px;
+      float: none;
+      display: none;
+
+    }
+
+
+}
+
+
+@media (max-width: 420px) {
+
+
+
+  div.link-wrap {
+    width: 100% !important;
+    height: 250px !important;
+
+  }
+
+
+
+
+
+
+
+
+}

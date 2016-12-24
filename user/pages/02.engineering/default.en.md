@@ -1,0 +1,69 @@
+---
+title: Engineering
+background_pic: /user/themes/sinoclean/images/sinoclean_head.jpg
+---
+
+# Engineering
+---
+
+<div class="engin_fields">
+  <a href="./engineering/electrical">
+  <div class="button_field">
+    <div class="img">
+    <img src="/user/themes/sinoclean/images/engineering_icons/electrical.jpg" />
+    </div>
+    <h3>Electrical Engineering</h3>
+  </div>
+  </a>
+
+  <a href="./engineering/optical">
+  <div class="button_field">
+    <div class="img">
+    <img src="/user/themes/sinoclean/images/engineering_icons/fibercable.jpg" />
+    </div>
+    <h3>Optical Fiber Cable Projects</h3>
+  </div>
+  </a>
+
+
+  <a href="./engineering/biomed">
+  <div class="button_field">
+    <div class="img">
+    <img src="/user/themes/sinoclean/images/engineering_icons/bio.png" />
+    </div>
+    <h3>Biomedical & Food Engineering</h3>
+  </div>
+  </a>
+
+
+  <a href="./engineering/pvc">
+  <div class="button_field">
+  <div class="img">
+  <img src="/user/themes/sinoclean/images/engineering_icons/pvc.jpg" />
+  </div>
+    <h3>Photovoltaic Cell</h3>
+  </div>
+  </a>
+
+  <a href="./engineering/auto">
+  <div class="button_field">
+  <div class="img">
+  <img src="/user/themes/sinoclean/images/engineering_icons/auto.jpg" />
+  </div>
+    <h3>Automotive</h3>
+  </div>
+  </a>
+
+
+  <a href="./engineering/pu">
+  <div class="button_field">
+  <div class="img">
+  <img src="/user/themes/sinoclean/images/engineering_icons/publicutil.jpg" />
+  </div>
+    <h3>Public Utility</h3>
+  </div>
+  </a>
+
+
+
+</div>

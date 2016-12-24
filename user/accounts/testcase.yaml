@@ -1,0 +1,12 @@
+email: wangwuwen@yahoo.com
+fullname: 'test case'
+title: Testing
+state: enabled
+access:
+  admin:
+    login: 'true'
+    super: 'true'
+  site:
+    login: 'true'
+hashed_password: $2y$10$2W/s.U.tZW9WS.Rj1VX9ReE476WxirgkYmZDjwHyRP7IS1VPhraqG
+language: en

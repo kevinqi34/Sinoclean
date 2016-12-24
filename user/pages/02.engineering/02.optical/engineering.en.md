@@ -1,0 +1,17 @@
+---
+title: 'Optical Fiber Cable Projects'
+slug: optical
+background_pic: /user/themes/sinoclean/images/sinoclean_head.jpg
+content:
+    items: '@self.children'
+    order:
+        by: date
+        dir: asc
+    limit: 50
+    pagination: false
+---
+
+# Optical Fiber Cable Projects
+---
+
+With the booming of Internet, and rapid development of Broadband Integrated Services Digital Network (ISDN), the demand for information is growing exponentially, almost doubling every year. Foreseeing the critical role of  fiber optic cable to the modern technology, SINOCLEAN-CE accommodates new requirements and take a lead on fiber optic cable projects such as: optical fiber and cable production plant mechanical and electrical installation project for Fenghuo Technology Co. Ltd., mechanical and electrical installation project for Weixin (Weihai, Shandong) fiber Technology Co., mechanical and electrical installation for 4 million core km fiber renovation project of Shandong Pacific cable Co. Ltd., mechanical and electrical installation of annual output of 10 million core km optical fiber for Jingzhou Kaile, new 400 million core km single-mode fiber project for Jiangsu  Sterlite Tongguang optical fiber Co. Ltd., annual output 300 tons fiber preform project for Jiangsu OFS-Hengtong optical Technology Co. Ltd., fiber preform project for Fujikura optical material Technology Co., Ltd., etc.

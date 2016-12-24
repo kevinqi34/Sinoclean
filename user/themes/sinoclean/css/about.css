@@ -1,0 +1,16 @@
+
+#body img {
+  height: 175px;
+  width: 290px;
+}
+
+#body p:first-of-type {
+  text-align: center;
+
+
+}
+
+#body img.large {
+  width: 100%;
+  height: auto;
+}

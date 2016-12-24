@@ -1,0 +1,42 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block addcss %}
+  <link href="/user/themes/sinoclean/css/default.css" type="text/css" rel="stylesheet" />
+  {{ header.css }}
+{% endblock %}
+
+{% block addjs %}
+  <script src="/user/themes/sinoclean/js/default.js" type="text/javascript" ></script>
+ {{ header.js }}
+{% endblock %}
+
+{% block head_img %}
+{% if header.background_pic %}
+  <div class="head_img" style="background: url({{header.background_pic }}) no-repeat center;" >
+  </div>
+{% endif %}
+{% if page.slug starts with 'project' %}
+<!-- Engineering Navigation -->
+<div class="engin-nav">
+  <!-- English Version -->
+  {% if grav.language.getActive == 'zh' %}
+    <h2>工程领域</h2>
+  {% else %}
+    <h2>Engineering Categories</h2>
+  {% endif %}
+  {% for links in config.homepage.enginlinks %}
+      {% if grav.language.getActive == 'zh' %}
+        <a href="../../{{ links.url_zh }}">{{ links.zh }}</a>
+      {% else %}
+        <a href="../.{{ links.url }}">{{ links.en }}</a>
+      {% endif %}
+  {% endfor %}
+</div>
+
+{% endif %}
+{% endblock %}
+
+
+{% block content %}
+    {{ page.content }}
+{% endblock %}
